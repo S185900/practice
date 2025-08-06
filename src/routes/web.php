@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+// とりあえずブラウザ表示だけ
+Route::view('/', 'contact');
+Route::view('/confirm', 'confirm');
+Route::view('/thanks', 'thanks');
+Route::view('/admin', 'admin');
+Route::view('/register', 'auth.register');
+Route::view('/login', 'auth.login');
